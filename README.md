@@ -5,7 +5,7 @@ Small Express API using Prisma with Supabase Postgres. A first login creates the
 ## Setup
 
 1. Install dependencies: `npm install`
-2. Copy `.env.example` to `.env`. Replace the Supabase project reference, region, and database password in both connection strings. Set `JWT_SECRET` to a long random secret.
+2. Copy `.env.example` to `.env`. Replace the Supabase project reference, region, and database password in both connection strings. Set `JWT_SECRET` to a long random secret. Set `FRONTEND_URL` to the frontend origin allowed by CORS (defaults to `http://localhost:5173` for local development).
 3. Create the Prisma client and database tables: `npm run prisma:generate`, then `npm run prisma:migrate -- --name init`.
 4. Start the development server: `npm run dev`.
 
